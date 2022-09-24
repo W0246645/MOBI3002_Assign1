@@ -15,8 +15,9 @@
     <string name="txt_minus">-</string>
     <string name="txt_divide">÷</string>
     <string name="txt_multiply">×</string>
-    <string name="txt_backspace">⇦</string>
+    <string name="txt_backspace">←</string>
     <string name="txt_plusminus">+/-</string>
     <string name="txt_decimal">.</string>
     <string name="txt_equals">=</string>
+    <string name="txt_NaN">NaN</string>
 </resources>
