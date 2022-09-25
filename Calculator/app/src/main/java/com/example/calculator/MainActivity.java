@@ -271,6 +271,9 @@ public class MainActivity extends AppCompatActivity {
     public View.OnClickListener onPlusminusClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            if (wasLastButtonOperator && operator == Character.MIN_VALUE) {
+                return;
+            }
             if (rightNumStr.toString().contains("-")) {
                 rightNumStr.deleteCharAt(0);
             } else {
