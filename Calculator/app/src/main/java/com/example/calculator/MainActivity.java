@@ -222,10 +222,10 @@ public class MainActivity extends AppCompatActivity {
     public View.OnClickListener onEqualsClicked = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-//            if (rightNumStr.length() == 0 && leftNumStr.length() == 0) {
-//                txt_display.setText("");
-//                return;
-//            }
+            if (rightNumStr.length() == 0 && leftNumStr.length() == 0) {
+                txt_display.setText("");
+                return;
+            }
             if (!wasLastButtonOperator && rightNumStr.length() > 0 && leftNumStr.length() > 0) {
                 rightNum = Double.parseDouble(rightNumStr.toString());
                 leftNum = calc.Calculate(leftNum, rightNum, operator);
